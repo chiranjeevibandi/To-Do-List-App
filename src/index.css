@@ -1,0 +1,137 @@
+body {
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.to-do-list{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+}
+h1{
+  font-size: 3.5rem;
+  color: white;
+}
+button{
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+.add-button{
+  background-color: hsl(125, 47%,54%);
+}
+.add-button:hover{
+  background-color: hsl(125, 47%,44%);
+}
+
+
+.delete-button{
+  background-color: hsl(10, 90%,50%);
+}
+.delete-button:hover{
+  background-color: hsl(10, 90%,40%);
+}
+
+.move-button{
+  background-color: hsl(207, 90%,64%);
+}
+.move-button:hover{
+  background-color: hsl(207, 90%,54%);
+}
+input[type="text"]{
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, 0.669);
+  margin-right: 30px;
+}
+ol{
+  padding: 0;
+}
+li{
+  width: 700px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px;
+  background-color: hsl(0, 0%,97%);
+  margin-bottom: 10px;
+  border: 3px solid rgba(198, 198, 198, 0.342);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.text{
+  flex: 1;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; */
+}
+.delete-button,.move-button{
+  padding: 8px 12px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+body{
+  background-color: gray;
+}
+
+@media (max-width:600px) {
+  body {
+  place-items: center;
+  background-image: linear-gradient(rgb(162, 162, 162),rgb(77, 77, 77));
+}
+  h1{
+    font-size: 1.5rem;
+  }
+  li{
+    font-size: 1rem;
+    width: 330px;
+  }
+  input[type="text"]{
+    height: 10px;
+    width: 200px;
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  button{
+    height: 35px;
+  }
+  .move-button,.delete-button{
+    font-size: 0.8rem;
+  }
+}
+
+
+@media (min-width:600px) and  (max-width:790px) {
+  body {
+  place-items: center;
+  background-image: linear-gradient(rgb(162, 162, 162),rgb(77, 77, 77));
+}
+  h1{
+    font-size: 2.5rem;
+  }
+  li{
+    height: 30px;
+    font-size: 1.2rem;
+    width: 500px;
+  }
+  input[type="text"]{
+    height: 20px;
+    width: 300px;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+  button{
+    height: 43px;
+  }
+  .move-button,.delete-button{
+    font-size: 1rem;
+  }
+}
